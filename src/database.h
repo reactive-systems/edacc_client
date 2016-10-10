@@ -223,7 +223,7 @@ const char QUERY_UPDATE_JOB[] =
     "UPDATE ExperimentResults, ExperimentResultsOutput SET "
     "status=%d, resultCode=%d, resultTime=%f, wallTime=%f, solverOutput='%s', "
     "watcherOutput='%s', launcherOutput='%s', verifierOutput='%s', "
-    "solverExitCode=%d, watcherExitCode=%d, verifierExitCode=%d, cost='%s' "
+    "solverExitCode=%d, watcherExitCode=%d, verifierExitCode=%d, cost=%s "
     "WHERE idJob=%d AND ExperimentResults_idJob=%d;";
 extern int db_update_job(const Job& job);
     
